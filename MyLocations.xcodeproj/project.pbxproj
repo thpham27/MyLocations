@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D67C7C6A251AF222003583A4 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C7C69251AF222003583A4 /* LocationDetailsViewController.swift */; };
 		D6EC5615250FF17300122755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5614250FF17300122755 /* AppDelegate.swift */; };
 		D6EC5617250FF17300122755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5616250FF17300122755 /* SceneDelegate.swift */; };
-		D6EC5619250FF17300122755 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5618250FF17300122755 /* FirstViewController.swift */; };
+		D6EC5619250FF17300122755 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5618250FF17300122755 /* CurrentLocationViewController.swift */; };
 		D6EC561B250FF17300122755 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC561A250FF17300122755 /* SecondViewController.swift */; };
 		D6EC561E250FF17300122755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EC561C250FF17300122755 /* Main.storyboard */; };
 		D6EC5620250FF17700122755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EC561F250FF17700122755 /* Assets.xcassets */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D67C7C69251AF222003583A4 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		D6EC5611250FF17300122755 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EC5614250FF17300122755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EC5616250FF17300122755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6EC5618250FF17300122755 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D6EC5618250FF17300122755 /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		D6EC561A250FF17300122755 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		D6EC561D250FF17300122755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6EC561F250FF17700122755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,12 +62,13 @@
 			children = (
 				D6EC5614250FF17300122755 /* AppDelegate.swift */,
 				D6EC5616250FF17300122755 /* SceneDelegate.swift */,
-				D6EC5618250FF17300122755 /* FirstViewController.swift */,
+				D6EC5618250FF17300122755 /* CurrentLocationViewController.swift */,
 				D6EC561A250FF17300122755 /* SecondViewController.swift */,
 				D6EC561C250FF17300122755 /* Main.storyboard */,
 				D6EC561F250FF17700122755 /* Assets.xcassets */,
 				D6EC5621250FF17700122755 /* LaunchScreen.storyboard */,
 				D6EC5624250FF17700122755 /* Info.plist */,
+				D67C7C69251AF222003583A4 /* LocationDetailsViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -142,9 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6EC561B250FF17300122755 /* SecondViewController.swift in Sources */,
-				D6EC5619250FF17300122755 /* FirstViewController.swift in Sources */,
+				D6EC5619250FF17300122755 /* CurrentLocationViewController.swift in Sources */,
 				D6EC5615250FF17300122755 /* AppDelegate.swift in Sources */,
 				D6EC5617250FF17300122755 /* SceneDelegate.swift in Sources */,
+				D67C7C6A251AF222003583A4 /* LocationDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
