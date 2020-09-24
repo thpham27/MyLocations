@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		D67C7C6A251AF222003583A4 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C7C69251AF222003583A4 /* LocationDetailsViewController.swift */; };
+		D67C7C6C251C2D70003583A4 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C7C6B251C2D70003583A4 /* CategoryPickerViewController.swift */; };
 		D6EC5615250FF17300122755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5614250FF17300122755 /* AppDelegate.swift */; };
 		D6EC5617250FF17300122755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5616250FF17300122755 /* SceneDelegate.swift */; };
 		D6EC5619250FF17300122755 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC5618250FF17300122755 /* CurrentLocationViewController.swift */; };
 		D6EC561B250FF17300122755 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC561A250FF17300122755 /* SecondViewController.swift */; };
-		D6EC561E250FF17300122755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EC561C250FF17300122755 /* Main.storyboard */; };
+		D6EC561E250FF17300122755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EC561C250FF17300122755 /* Main.storyboard */; settings = {ASSET_TAGS = (TagLocation, ); }; };
 		D6EC5620250FF17700122755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6EC561F250FF17700122755 /* Assets.xcassets */; };
 		D6EC5623250FF17700122755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6EC5621250FF17700122755 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D67C7C69251AF222003583A4 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		D67C7C6B251C2D70003583A4 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		D6EC5611250FF17300122755 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6EC5614250FF17300122755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6EC5616250FF17300122755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				D6EC5621250FF17700122755 /* LaunchScreen.storyboard */,
 				D6EC5624250FF17700122755 /* Info.plist */,
 				D67C7C69251AF222003583A4 /* LocationDetailsViewController.swift */,
+				D67C7C6B251C2D70003583A4 /* CategoryPickerViewController.swift */,
 			);
 			path = MyLocations;
 			sourceTree = "<group>";
@@ -99,6 +102,9 @@
 		D6EC5609250FF17300122755 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					TagLocation,
+				);
 				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Thanh Pham";
@@ -144,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D67C7C6C251C2D70003583A4 /* CategoryPickerViewController.swift in Sources */,
 				D6EC561B250FF17300122755 /* SecondViewController.swift in Sources */,
 				D6EC5619250FF17300122755 /* CurrentLocationViewController.swift in Sources */,
 				D6EC5615250FF17300122755 /* AppDelegate.swift in Sources */,
