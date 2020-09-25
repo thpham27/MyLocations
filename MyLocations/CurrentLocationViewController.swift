@@ -52,7 +52,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         controller.placemark = placemark }
        }
      // MARK:- Actions
-    @IBAction func getLocation() {
+    @IBAction func getLocation() {          //ask for permisson
         let authStatus = CLLocationManager.authorizationStatus()
         if authStatus == .notDetermined {
             locationManager.requestWhenInUseAuthorization()
@@ -131,7 +131,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
              timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(didTimeOut), userInfo: nil, repeats: false)
            }
          }
-        func stopLocationManager() {
+        func stopLocationManager() {            //stop 
           if updatingLocation {
             locationManager.stopUpdatingLocation()
             locationManager.delegate = nil

@@ -11,7 +11,7 @@
         <scene sceneID="jy3-GZ-OK1">
             <objects>
                 <tableViewController id="Unn-Nv-WHj" customClass="LocationDetailsViewController" customModule="MyLocations" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="zjB-s3-PdA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="zjB-s3-PdA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -65,7 +65,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="rJU-VX-bHb" kind="show" id="uJ0-ho-VOm"/>
+                                            <segue destination="rJU-VX-bHb" kind="show" identifier="PickCategory" id="uJ0-ho-VOm"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -151,8 +151,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnO-BH-dq7">
-                                                    <rect key="frame" x="20" y="11.666666666666664" width="374" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnO-BH-dq7">
+                                                    <rect key="frame" x="20" y="11.666666666666664" width="63" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -167,9 +167,9 @@
                                             <constraints>
                                                 <constraint firstItem="qnO-BH-dq7" firstAttribute="leading" secondItem="d1Y-cc-qHU" secondAttribute="leadingMargin" id="Cvp-Xz-EAs"/>
                                                 <constraint firstAttribute="trailing" secondItem="o0q-sT-wJi" secondAttribute="trailing" constant="16" id="WHc-Oy-TBQ"/>
-                                                <constraint firstItem="qnO-BH-dq7" firstAttribute="centerX" secondItem="d1Y-cc-qHU" secondAttribute="centerX" id="jTz-gQ-7GW"/>
                                                 <constraint firstItem="qnO-BH-dq7" firstAttribute="centerY" secondItem="d1Y-cc-qHU" secondAttribute="centerY" id="oqo-jE-RUe"/>
                                                 <constraint firstItem="o0q-sT-wJi" firstAttribute="centerY" secondItem="d1Y-cc-qHU" secondAttribute="centerY" id="z1Q-Ef-GYP"/>
+                                                <constraint firstItem="o0q-sT-wJi" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="qnO-BH-dq7" secondAttribute="trailing" constant="16" id="zGp-LY-Ye9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -224,7 +224,6 @@
                         <outlet property="descriptionTextView" destination="SQU-Ex-6ez" id="M3X-36-bWi"/>
                         <outlet property="latitudeLabel" destination="CJY-WE-N9Q" id="anf-Ci-2LU"/>
                         <outlet property="longitudeLabel" destination="1VM-j3-m2Q" id="kVK-4I-0kD"/>
-                        <segue destination="rJU-VX-bHb" kind="show" id="HUi-tO-3aM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXI-bM-RYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -240,7 +239,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="LRX-K9-PUD" style="IBUITableViewCellStyleDefault" id="eGh-SP-rR9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="LRX-K9-PUD" style="IBUITableViewCellStyleDefault" id="eGh-SP-rR9">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGh-SP-rR9" id="uQG-Tk-LD1">
@@ -256,12 +255,20 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8YH-I7-LTV" kind="unwind" identifier="PickedCategory" unwindAction="categoryPickerDidPickCategory:" id="j6b-K2-qY9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rJU-VX-bHb" id="P9S-w7-n8k"/>
+                            <outlet property="delegate" destination="rJU-VX-bHb" id="JBP-RD-Qs4"/>
+                        </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OBB-Nu-bDI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="il2-Dq-5Yk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="8YH-I7-LTV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3901" y="-321"/>
         </scene>
@@ -439,9 +446,6 @@
             <point key="canvasLocation" x="782.60869565217399" y="-321.19565217391306"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="HUi-tO-3aM"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
