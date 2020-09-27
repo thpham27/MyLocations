@@ -208,12 +208,12 @@
                     <navigationItem key="navigationItem" title="Tag Location" id="3Rg-xD-ZW3">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GGR-ho-qJm">
                             <connections>
-                                <action selector="cancel" destination="Unn-Nv-WHj" id="x3h-M9-Gcw"/>
+                                <action selector="cancel" destination="Unn-Nv-WHj" id="iy1-y5-IZi"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="amz-PA-gzZ">
                             <connections>
-                                <action selector="done" destination="Unn-Nv-WHj" id="LX8-DL-fCk"/>
+                                <action selector="done" destination="Unn-Nv-WHj" id="arg-V9-NEJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -361,12 +361,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="b4l-sq-D2T"/>
                     <connections>
-                        <outlet property="addressLabel" destination="oTy-VN-GbM" id="xBc-HE-CRi"/>
-                        <outlet property="getButton" destination="12f-bI-4rj" id="Ngo-Si-fxS"/>
-                        <outlet property="latitudeLabel" destination="dK9-Rs-M6B" id="jw4-0Z-QdL"/>
-                        <outlet property="longitudeLabel" destination="TwY-bI-irX" id="OjY-hw-M3h"/>
-                        <outlet property="messageLabel" destination="eMc-KR-1iW" id="fhY-gv-Ue6"/>
-                        <outlet property="tagButton" destination="0iO-OR-j7o" id="Av8-eN-JyM"/>
+                        <outlet property="addressLabel" destination="oTy-VN-GbM" id="qAq-ud-t9d"/>
+                        <outlet property="getButton" destination="12f-bI-4rj" id="Cmg-Ax-Z5X"/>
+                        <outlet property="latitudeLabel" destination="dK9-Rs-M6B" id="wvV-4t-YRs"/>
+                        <outlet property="longitudeLabel" destination="TwY-bI-irX" id="m0K-yX-0sv"/>
+                        <outlet property="messageLabel" destination="eMc-KR-1iW" id="nAe-ef-a5c"/>
+                        <outlet property="tagButton" destination="0iO-OR-j7o" id="Mql-2u-Clt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Thanh Pham. All rights reserved.
 //
 
-
+import CoreData
 import UIKit
 import CoreLocation
 
@@ -27,6 +27,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
     var performingReverseGeocoding = false
     var lastGeocodingError: Error?
     var timer: Timer?
+    var managedObjectContext: NSManagedObjectContext!
 
     
     override func viewDidLoad() {
@@ -46,10 +47,14 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
        // MARK:- Navigation
        override func prepare(for segue: UIStoryboardSegue,
                                 sender: Any?) {
-       if segue.identifier == "TagLocation" { let controller = segue.destination
-       as! LocationDetailsViewController
+        if segue.identifier == "TagLocation" {
+        let controller = segue.destination
+        as! LocationDetailsViewController
         controller.coordinate = location!.coordinate
-        controller.placemark = placemark }
+        controller.placemark = placemark
+        controller.managedObjectContext = managedObjectContext
+
+        }
        }
      // MARK:- Actions
     @IBAction func getLocation() {          //ask for permisson

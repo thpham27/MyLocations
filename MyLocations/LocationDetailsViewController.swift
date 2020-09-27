@@ -10,6 +10,7 @@
 
 import CoreLocation
 import UIKit
+import CoreData
 
     private let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -29,7 +30,9 @@ class LocationDetailsViewController: UITableViewController {
     var coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     var placemark: CLPlacemark?
     var categoryName = "No Category"
-
+    var managedObjectContext: NSManagedObjectContext!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,6 +55,15 @@ class LocationDetailsViewController: UITableViewController {
         tableView.addGestureRecognizer(gestureRecognizer)
 }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // MARK:- Actions
       @IBAction func done() {
       let hudView = HudView.hud(inView: navigationController!.view, animated: true)
@@ -82,7 +94,7 @@ class LocationDetailsViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "PickCategory" {
         let controller = segue.destination as! CategoryPickerViewController
-    controller.selectedCategoryName = categoryName
+        controller.selectedCategoryName = categoryName
         }
     }
     
